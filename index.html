@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Experimental labs</title>
+        <style>
+            body {
+                margin: 0 auto;
+                width: 100dvw;
+                height: 100dvh;
+                background-color: #2f2f2f;
+                overflow: hidden;
+            }
+            #root {
+                image-rendering: pixelated;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                width: 1280px;
+                height: 720px;
+            }
+            button {
+                z-index: 10;
+                background-color: aliceblue;
+                position: fixed;
+                left: 0;
+                bottom: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="root"></canvas>
+        <audio
+            src="hod.aac"
+            id="audio"
+        ></audio>
+        <button
+            data-playing="false"
+            role="switch"
+            aria-checked="false"
+        >
+            <span>Play/Pause</span>
+        </button>
+    </body>
+    <script
+        src="index.js"
+        type="module"
+    ></script>
+</html>
