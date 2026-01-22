@@ -1,0 +1,1 @@
+# Simple Three.js scaffolding with Vite
