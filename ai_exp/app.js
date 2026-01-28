@@ -1,3 +1,5 @@
+// Find more about here: https://ai.google.dev/edge/mediapipe/solutions/guide
+
 const vision = FilesetResolver.forVisionTasks(
     "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest/wasm",
 );
